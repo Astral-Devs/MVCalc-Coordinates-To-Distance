@@ -64,17 +64,6 @@ def calcAngle(city1, city2):
     for i in range (3):
         dot += city1[i]*city2[i]
 
-    #mag1 = 0
-   # mag2 = 0
-    # calculates the magnitudes of the both vectors
-   # for elem in city1:
-   #     mag1 += elem * elem
-   # mag1 = sqrt(mag1)
-
-   # for elem in city1:
-     #   mag2 += elem * elem
-   # mag2 = sqrt(mag2)
-
     # converts the data into an angle
     angle = acos(dot / (pow(3961,2)))
 
@@ -107,7 +96,7 @@ city2Data = ["city", "sphericalCoords", "rectCoords"]
 currData = ["angle", "distance"]
 element = ["city1", "city2", "data"]
 
-# runs through the list of cities and
+# runs through the list of cities and print out the results
 for pair in citiesListMins:
     city1Data[0] = pair[0][2]
     city2Data[0] = pair[1][2]
@@ -159,3 +148,7 @@ for pair in citiesListCoords:
     print(city1Data)
     print(city2Data)
     print("Distance: " + str(dist) + " Angle: " + str(angle))
+
+print(11718.657277828788/500)
+print(11718.657277828788//500)
+print((11718.657277828788%500)/500*60)
